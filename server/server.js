@@ -16,7 +16,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/property', propertyRoutes);
 app.use('/api/admin', adminRoutes);
 const port = process.env.PORT || 8000;
-
+app.use(express.json());
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
