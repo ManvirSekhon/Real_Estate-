@@ -1,0 +1,53 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    justify-content: start;
+}
+
+.search_page {
+  padding: 20px;
+  min-height: 100vh; 
+}
+
+
+.search_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; 
+  margin: 10px auto;
+  border: 1px solid #ccc; 
+  border-radius: 50px; 
+  padding: 4px 16px; 
+  background-color: white;
+}
+
+input {
+  flex: 1; 
+  border: none; 
+  outline: none; 
+  padding: 10px 0;
+  background: transparent;
+  font-size: 16px;
+}
+
+.searchButton {
+  background: transparent; 
+  border: none; 
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 16px; 
+}
+
+.searchButton:hover {
+  color: #000; 
+}

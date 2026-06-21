@@ -1,0 +1,224 @@
+/* ================= HERO SECTION ================= */
+
+.hero {
+    position: relative;
+    min-height: 90vh;
+    background-image: url('../../assets/herobg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* overlay */
+.hero::before {
+    position: absolute;
+
+}
+
+.hero h1 {
+    position: relative;
+    color: #F9FAFB;
+    padding: 20px 30px;
+    background-color: rgba(31, 41, 55, 0.6);
+    border-radius: 10px;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.9);
+
+    font-size: clamp(28px, 5vw, 50px);
+    max-width: 800px;
+}
+
+.hero button {
+    position: relative;
+    background-color: #D97706;
+    color: #F9FAFB;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #7b4303;
+    transform: scale(1.05);
+}
+
+
+/* ================= ABOUT SECTION ================= */
+
+.about {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f9fafb;
+}
+
+.about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #4b5563;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+
+/* ================= FEATURED SECTION ================= */
+
+.featured {
+    padding: 4rem 2rem 2rem;
+    background: #ffffff;
+}
+
+.featuredHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.featuredHeader h2 {
+    font-size: 2rem;
+    color: #111827;
+}
+
+
+/* ================= PROPERTY GRID ================= */
+
+.propertyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+
+/* ================= PROPERTY TILE ================= */
+
+.propertyTile {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.propertyTile:hover {
+    transform: scale(1.04);
+}
+
+
+/* ================= TILE OVERLAY ================= */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.2),
+            transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.overlay h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.overlay p {
+    color: #facc15;
+    margin: 5px 0 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.viewAllTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px; 
+  border: 2px dashed #999ca0; 
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.viewAllTile:hover {
+  background-color: #1a202c; 
+  border-style: solid;
+  border-color: #1a202c;
+  transform: translateY(-5px);
+}
+
+.viewAllTile a {
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.viewAllTile:hover a {
+  color: #ffffff; 
+}
+
+.viewAllTile a::after {
+  content: '→';
+  font-size: 1.5rem;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero h1 {
+        padding: 15px 20px;
+    }
+
+    .featuredHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .about {
+        padding: 3rem 1.5rem;
+    }
+
+    .featured {
+        padding: 3rem 1.5rem;
+    }
+}

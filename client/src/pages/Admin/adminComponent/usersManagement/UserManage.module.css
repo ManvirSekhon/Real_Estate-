@@ -1,0 +1,44 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color:#111827;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.addUserBtn{
+    background-color: #0369a1;
+    color: #F9FAFB;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+
+}
+
+.back{
+    background-color: #0369a1;
+    color: #F9FAFB;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.addUserBtn:hover {
+    background-color: #025a8a;
+}
+
+.userlayout {
+    padding: 15px;
+    margin-top: 10px;
+}

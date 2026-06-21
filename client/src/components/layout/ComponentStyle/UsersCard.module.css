@@ -1,0 +1,94 @@
+.cardRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.cardRow:hover {
+  transform: translateX(5px);
+}
+
+.index{
+    font-weight: bold;
+    color: #2563eb;
+    margin-right: 15px;
+}
+
+.img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img{
+    border-radius: 50px;
+    background-color: #2563eb;
+    font-weight: bold;
+    color: #fff;
+    width: 50px;
+    height: 50px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+}
+
+.info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.email {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.price {
+  color: green;
+  font-size: 0.9rem;
+}
+
+.details {
+  flex: 1;
+  text-align: center;
+}
+
+.roleTag {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.editBtn, .deleteBtn {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editBtn { background: #f3f4f6; }
+.deleteBtn { background: #fee2e2; color: #dc2626; }

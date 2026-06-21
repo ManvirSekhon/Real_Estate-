@@ -1,0 +1,101 @@
+.add_property {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #e2dada;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.back{
+    background-color: #F9FAFB;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.back:hover {
+    margin-bottom: 3px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.add_property h1 {
+  text-align: center;
+  margin: 0 0 2rem 0;
+  color: #1f2937;
+}
+
+.property_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.property_form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.row {
+  flex-direction: row !important;
+  gap: 1.5rem !important;
+}
+
+.row > div {
+  flex: 1;
+}
+
+.property_form label {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.property_form input,
+.property_form textarea,
+.property_form select {
+  padding: 0.75rem;
+  border: 1px solid #a3aab5;
+  /* border: 1px solid #d1d5db; */
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.property_form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.property_form input:focus,
+.property_form textarea:focus,
+.property_form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.property_form button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #D97706;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.property_form button:hover {
+  background-color: #7b4303;
+}

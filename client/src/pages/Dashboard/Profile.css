@@ -1,0 +1,258 @@
+/* pages/Dashboard/index.css */
+.dashboard-home {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.settingsIcon {
+    position: absolute;
+    top: 20px;    /* Distance from the top */
+    right: 20px;  /* Distance from the right */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Keeps the text menu aligned under the gear */
+    cursor: pointer;
+    z-index: 10;  /* Ensures it stays above other elements */
+}
+
+.settings {
+    list-style: none;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+    width: max-content;
+}
+
+.settings li {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.settings li:hover {
+    background-color: #f0f0f0;
+}
+
+.settings .logout:hover, .settings .deleteAccount:hover {
+  color:red;
+}
+
+.profile-header .user_info h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.profile_role {
+  font-size: 15px;
+  display: inline;
+  padding: 2px 8px;
+  color: green;
+  background-color: rgba(0, 128, 0, 0.359);
+  border-radius: 15px;
+}
+
+.dashboard-home .profile_image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.dashboard-home .profile_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* image */
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10rem;       
+  text-transform: uppercase;
+
+  object-fit: cover;
+}
+
+
+.profile_image {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(219, 203, 203, 0.5);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.avatar-overlay svg {
+  width: 60px;
+  height: 60px;
+}
+
+.profile_image:hover .avatar-overlay {
+  opacity: 1;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e5e7eb;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-properties {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+}
+
+.stat-bookings {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+}
+
+.stat-revenue {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+  color: white;
+}
+
+.stat-messages {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Quick Actions */
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.quick-action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.quick-action:hover {
+  border-color: #3b82f6;
+  background: #f8fafc;
+  transform: translateY(-2px);
+}
+
+.quick-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #f1f5f9;
+}
+
+.quick-action h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.quick-action p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-home {
+    padding: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quick-actions {
+    grid-template-columns: 1fr;
+  }
+}

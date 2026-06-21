@@ -1,0 +1,24 @@
+.propertiesGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    justify-content: start;
+}
+
+.layout .addBtn {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    background-color: #D97706;
+    color: #F9FAFB;
+    cursor: pointer;
+}
+
+.layout .addBtn:hover{
+    background-color: #7b4303;
+}
