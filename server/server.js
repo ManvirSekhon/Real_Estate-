@@ -17,6 +17,10 @@ app.use('/api/property', propertyRoutes);
 app.use('/api/admin', adminRoutes);
 const port = process.env.PORT || 8000;
 app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("Real Estate Marketplace API is running successfully");
+});
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
